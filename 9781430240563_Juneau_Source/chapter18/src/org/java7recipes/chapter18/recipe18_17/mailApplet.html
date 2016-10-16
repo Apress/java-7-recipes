@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Test page for launching the applet via deployJava.js</title>
+    </head>
+    <body>
+        <h3>Test page for launching the applet via deployJava.js</h3>
+        <script src="http://java.com/js/deployJava.js"></script>
+        <script>
+            var attributes = {
+                codebase:   '/PATH_TO_CODEBASE/',
+                code:       'org.java7recipes.chapter18.recipe18_17.MailApplet.class',
+                archive:    '/PATH_TO_JAR/MailApplet.jar, /PATH_TO_JAR/mail.jar',
+                width:      300,
+                height:     300
+            };
+            var parameters = {fontSize:16}; <!-- Applet Parameters -->
+            var version = "1.6"; <!-- Required Java Version -->
+            deployJava.runApplet(attributes, parameters, version);
+        </script>
+    </body>
+</html>

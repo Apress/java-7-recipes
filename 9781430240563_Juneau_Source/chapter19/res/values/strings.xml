@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, todaysDate!</string>
+    <string name="app_name">Todays Date</string>
+    <string name="button">Press Me</string>
+    <string name="entertext">Enter Your Name</string>
+    <string name="levels_prompt">Choose a level</string>
+    <string-array name="levels_array">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+</resources>

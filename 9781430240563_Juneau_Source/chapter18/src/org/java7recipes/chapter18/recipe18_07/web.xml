@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <context-param>
+        <param-name>emailAddress</param-name>
+        <param-value>you@yourcompany.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>smtpAddress</param-name>
+        <param-value>smtp.yourcompany.com</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>MailServlet</servlet-name>
+        <servlet-class>org.java7recipes.chapter18.recipe18_07.MailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MailServlet</servlet-name>
+        <url-pattern>/MailServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file> /mail.html </welcome-file>
+    </welcome-file-list>
+</web-app>
